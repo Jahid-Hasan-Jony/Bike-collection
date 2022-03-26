@@ -9,6 +9,7 @@ const Shop = () => {
 
     const [products, setProducts] = useState([])
     const [selectedCard, setSelectedCard] = useState([])
+    const [chooseForMECard, setChooseForMECard] = useState([])
 
     useEffect(() => {
         fetch('data.json')
@@ -23,17 +24,25 @@ const Shop = () => {
 
     const removeSelectedProducts = () => {
         setSelectedCard([])
+        setChooseForMECard([])
     }
 
     const randomSelectOne = () => {
-        setSelectedCard([selectedCard[Math.floor(Math.random() * selectedCard.length)]])
+        const ChooseFromSelectedCard = [...selectedCard]
+        if (ChooseFromSelectedCard.length) {
+            console.log(ChooseFromSelectedCard)
+            setChooseForMECard([ChooseFromSelectedCard[Math.floor(Math.random() * ChooseFromSelectedCard.length)]])
+        }
+
     }
     return (
         <div className='row container-fluid'>
             <div className='col-md-4 py-4 order-md-2'>
                 <Card className='bg-light' style={{ padding: '20px' }}>
                     <h2>Selected Bike :</h2>
-                    {selectedCard.map(product => <SelectedProducts product={product} />)}
+                    {selectedCard.map(product => <SelectedProducts
+                        key={Math.random()}
+                        product={product} />)}
                     <div className="d-grid gap-2">
                         <Button onClick={randomSelectOne} variant="outline-success" size="lg">
                             CHOOSE 1 FOR ME
@@ -42,6 +51,11 @@ const Shop = () => {
                             CHOOSE AGAIN
                         </Button>
                     </div>
+                    {
+                        chooseForMECard.map(product => <SelectedProducts
+                            key={Math.random()}
+                            product={product} />)
+                    }
                 </Card>
             </div>
             <div className='col-md-8 order-md-1'>

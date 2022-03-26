@@ -12,7 +12,7 @@ const Shop = () => {
     const [chooseForMECard, setChooseForMECard] = useState([])
 
     useEffect(() => {
-        fetch('data.json')
+        fetch('FakeData/data.json')
             .then(response => response.json())
             .then(data => setProducts(data))
     }, [])

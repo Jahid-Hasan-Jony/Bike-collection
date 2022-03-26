@@ -27,10 +27,9 @@ const Shop = () => {
         setChooseForMECard([])
     }
 
-    const randomSelectOne = () => {
+    const randomSelectOneHandler = () => {
         const ChooseFromSelectedCard = [...selectedCard]
         if (ChooseFromSelectedCard.length) {
-            console.log(ChooseFromSelectedCard)
             setChooseForMECard([ChooseFromSelectedCard[Math.floor(Math.random() * ChooseFromSelectedCard.length)]])
         }
 
@@ -44,7 +43,7 @@ const Shop = () => {
                         key={Math.random()}
                         product={product} />)}
                     <div className="d-grid gap-2">
-                        <Button onClick={randomSelectOne} variant="outline-success" size="lg">
+                        <Button onClick={randomSelectOneHandler} variant="outline-success" size="lg">
                             CHOOSE 1 FOR ME
                         </Button>
                         <Button onClick={removeSelectedProducts} variant="outline-primary" size="lg">

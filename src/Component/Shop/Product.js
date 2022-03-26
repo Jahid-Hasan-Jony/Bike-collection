@@ -4,16 +4,17 @@ import Button from 'react-bootstrap/Button'
 
 const Product = (props) => {
     const { name, image, price } = props.product;
+    const { addToCardHandler, product } = props;
     return (
         <div className='col-md-4 p-3'>
-            <Card className='p-2'>
+            <Card>
                 <Card.Img variant="top" src={image} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
                         Price : {price} Tk.
                     </Card.Text>
-                    <Button variant="primary">Buy Now</Button>
+                    <Button onClick={() => addToCardHandler(product)} variant="primary">Add To Card</Button>
                 </Card.Body>
             </Card>
         </div>

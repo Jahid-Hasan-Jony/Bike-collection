@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Yamaha R15 V4",
+        "price": "505000",
+        "image": "https://www.classyprice.com.bd/images/Yamaha-R15-v4%20(1).webp"
+    },
+    {
+        "id": "2",
+        "name": "Yamaha R15M",
+        "price": "520000",
+        "image": "https://www.classyprice.com.bd/images/Yamaha-R15M.webp"
+    },
+    {
+        "id": "3",
+        "name": "Yamaha R15M",
+        "price": "535000",
+        "image": "https://www.classyprice.com.bd/images/yamaha-xsr-155.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Honda CB150R ExMotion",
+        "price": "550000",
+        "image": "https://www.classyprice.com.bd/images/Honda-CB150R-ExMotion-Grey.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Yamaha FZ-X",
+        "price": "280000",
+        "image": "https://www.classyprice.com.bd/images/Yamaha-FZ-X.webp"
+    },
+    {
+        "id": "6",
+        "name": "Aprilia RS4 125",
+        "price": "575000",
+        "image": "https://www.classyprice.com.bd/images/aprilia-rs4-125.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Taro GP-1 Sport",
+        "price": "306000",
+        "image": "https://www.classyprice.com.bd/images/Taro-GP-1-Red-White.jpg"
+    },
+    {
+        "id": "8",
+        "name": "Taro GP 1 V3",
+        "price": "356000",
+        "image": "https://www.classyprice.com.bd/images/taro-gp-v3-price.jpg"
+    },
+    {
+        "id": "9",
+        "name": "Yamaha Vixion",
+        "price": "360000",
+        "image": "https://www.classyprice.com.bd/images/yamaha-vixion-price.jpg"
+    }
+]
